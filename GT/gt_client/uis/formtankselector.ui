@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormTankSelector</class>
+ <widget class="QWidget" name="FormTankSelector">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>585</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget:disabled{
+	color: rgb(120, 120,120);
+}
+QPushButton:disabled{
+	border-image: url(:/stylesheet/button_disabled.png);
+}
+QLabel, QPushButton, QTreeView{
+	color: rgb(255, 255, 255);
+}
+#widget{
+	border-image: url(:/dialog/dialog_2.png);
+}
+/*PushButton*/
+QPushButton{
+	color: rgb(180, 188, 142);
+	border-image: url(:/stylesheet/button.png);
+}
+QPushButton:hover, QPushButton:focus{	
+	color: rgb(255, 255, 255);	
+	border-image: url(:/stylesheet/button_hover.png);
+}
+QPushButton:pressed{
+	padding-top: 2px;
+	border-image: url(:/stylesheet/button_pressed.png);
+}
+
+QToolTip {
+    border: 2px solid black;
+    border-radius: 3px;
+	color: white;
+	background-color: black;
+    opacity: 230;
+	font: 8pt &quot;Revue BT&quot;;
+}
+
+/*Tanks preview*/
+#widget_2 QPushButton{
+	color:none;
+	border-image: none;
+	border: 2px solid rgb(100, 100, 100);
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 5);
+}
+
+#widget_2 QPushButton:hover,#widget_2 QPushButton:focus{
+	color:none;
+	border-image: none;
+	border: 2px solid rgb(200, 200, 200);
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 5);
+}
+
+#widget_2 QPushButton:pressed{
+	color:none;
+	border-image: none;
+	border: 2px solid rgb(150, 150, 150);
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 10);
+	padding: 0px;
+}
+
+/*Frames*/
+#widget_2 {
+	border: 1px solid rgb(54, 54, 54);
+	border-radius: 2px;
+	background-color: rgba(0, 0, 0, 90);
+}
+
+/*small buttons*/
+#_pb_left,
+#_pb_right {
+	color: rgb(180, 188, 142);
+	border-image: url(:/stylesheet/small_button.png);
+}
+#_pb_left:disabled,
+#_pb_right:disabled {
+	border-image: url(:/stylesheet/small_button_disabled.png);
+}
+#_pb_left:hover, #_pb_left:focus,
+#_pb_right:hover, #_pb_right:focus {	
+	color: rgb(255, 255, 255);	
+	border-image: url(:/stylesheet/small_button_hover.png);
+}
+#_pb_left:pressed,
+#_pb_right:pressed {
+	padding-top: 2px;
+	border-image: url(:/stylesheet/small_button_pressed.png);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer_7">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_8">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>460</width>
+       <height>450</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>30</number>
+      </property>
+      <property name="topMargin">
+       <number>42</number>
+      </property>
+      <property name="rightMargin">
+       <number>30</number>
+      </property>
+      <property name="bottomMargin">
+       <number>50</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Revue BT</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Selecciona un Tanque para jugar</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="_pb_left">
+          <property name="minimumSize">
+           <size>
+            <width>35</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>35</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources/resources.qrc">
+            <normaloff>:/stylesheet/left.png</normaloff>:/stylesheet/left.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>234</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>234</width>
+            <height>50</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="leftMargin">
+            <number>5</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="_pb_right">
+          <property name="minimumSize">
+           <size>
+            <width>35</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>35</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources/resources.qrc">
+            <normaloff>:/stylesheet/right.png</normaloff>:/stylesheet/right.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>15</width>
+            <height>15</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>368</width>
+            <height>220</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>368</width>
+            <height>220</height>
+           </size>
+          </property>
+          <widget class="QLabel" name="_l_preview_tank">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>68</width>
+             <height>68</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_preview_skill_1">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>38</y>
+             <width>48</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_preview_skill_2">
+           <property name="geometry">
+            <rect>
+             <x>149</x>
+             <y>38</y>
+             <width>48</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_preview_skill_3">
+           <property name="geometry">
+            <rect>
+             <x>208</x>
+             <y>38</y>
+             <width>48</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_name_tank">
+           <property name="geometry">
+            <rect>
+             <x>94</x>
+             <y>4</y>
+             <width>161</width>
+             <height>25</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Arenas</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_foreground">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>368</width>
+             <height>220</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/stylesheet/foreground_tank_selector.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_1">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>8</y>
+             <width>23</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/icons/live.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_2">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>45</y>
+             <width>23</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/icons/mana.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_5">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>152</y>
+             <width>23</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/icons/armor.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_6">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>188</y>
+             <width>23</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/icons/speed.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_3">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>80</y>
+             <width>23</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/icons/live_regeneration.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_4">
+           <property name="geometry">
+            <rect>
+             <x>280</x>
+             <y>116</y>
+             <width>23</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>23</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/icons/mana_regeneration.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_live">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>12</y>
+             <width>50</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>44</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>999+999</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_mana">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>49</y>
+             <width>50</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>44</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>200+1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_live_regeneration">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>83</y>
+             <width>50</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>44</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>200+1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_mana_regeneration">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>120</y>
+             <width>50</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>44</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>200+1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_armor">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>155</y>
+             <width>50</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>44</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>200+1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_speed">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>192</y>
+             <width>50</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>44</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>200+1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_background">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>368</width>
+             <height>220</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="../resources/resources.qrc">:/stylesheet/background_tank_selector.png</pixmap>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_information">
+           <property name="geometry">
+            <rect>
+             <x>19</x>
+             <y>100</y>
+             <width>241</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Revue BT</family>
+             <pointsize>7</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">padding-top: 2px;
+padding-left: 2px;
+padding-right: 2px;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_foreground_skill_3">
+           <property name="geometry">
+            <rect>
+             <x>209</x>
+             <y>39</y>
+             <width>48</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_foreground_skill_2">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>39</y>
+             <width>48</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="_l_foreground_skill_1">
+           <property name="geometry">
+            <rect>
+             <x>91</x>
+             <y>39</y>
+             <width>48</width>
+             <height>48</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <zorder>_l_background</zorder>
+          <zorder>_l_information</zorder>
+          <zorder>_l_preview_tank</zorder>
+          <zorder>_l_preview_skill_2</zorder>
+          <zorder>_l_preview_skill_3</zorder>
+          <zorder>_l_name_tank</zorder>
+          <zorder>_l_1</zorder>
+          <zorder>_l_2</zorder>
+          <zorder>_l_5</zorder>
+          <zorder>_l_6</zorder>
+          <zorder>_l_3</zorder>
+          <zorder>_l_4</zorder>
+          <zorder>_l_live</zorder>
+          <zorder>_l_mana</zorder>
+          <zorder>_l_live_regeneration</zorder>
+          <zorder>_l_mana_regeneration</zorder>
+          <zorder>_l_armor</zorder>
+          <zorder>_l_speed</zorder>
+          <zorder>_l_preview_skill_1</zorder>
+          <zorder>_l_foreground</zorder>
+          <zorder>_l_foreground_skill_3</zorder>
+          <zorder>_l_foreground_skill_2</zorder>
+          <zorder>_l_foreground_skill_1</zorder>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="_pb_accept">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Revue BT</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Aceptar</string>
+          </property>
+          <property name="shortcut">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="_pb_cancel">
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Revue BT</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Cancelar</string>
+          </property>
+          <property name="shortcut">
+           <string>Esc</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

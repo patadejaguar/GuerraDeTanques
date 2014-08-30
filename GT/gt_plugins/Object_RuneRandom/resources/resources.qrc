@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/xavier_object_rune_random">
+        <file>animation_1.png</file>
+        <file>animation_2.png</file>
+        <file>animation_3.png</file>
+        <file>animation_4.png</file>
+        <file>effect_animation_1.png</file>
+        <file>effect_animation_2.png</file>
+        <file>effect_animation_3.png</file>
+        <file>effect_animation_4.png</file>
+        <file>explode_1.png</file>
+        <file>explode_2.png</file>
+        <file>explode_3.png</file>
+        <file>explode_4.png</file>
+        <file>mini_map_object_1.png</file>
+        <file>mini_map_object_2.png</file>
+        <file>mini_map_object_3.png</file>
+        <file>mini_map_object_4.png</file>
+        <file>preview.png</file>
+        <file>sound_1.mp3</file>
+        <file>sound_2.mp3</file>
+        <file>sound_3.mp3</file>
+        <file>sound_4.mp3</file>
+        <file>mini_map_object_0.png</file>
+    </qresource>
+</RCC>

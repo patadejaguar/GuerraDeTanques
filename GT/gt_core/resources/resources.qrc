@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/gt">
+        <file>sounds/explode.mp3</file>
+        <file>sprites/circle_of_power_1.png</file>
+        <file>sprites/circle_of_power_2.png</file>
+        <file>sprites/live_cp_1.png</file>
+        <file>sprites/live_cp_2.png</file>
+        <file>sprites/mini_map_object.png</file>
+        <file>sprites/mini_map_object_1.png</file>
+        <file>sprites/mini_map_object_2.png</file>
+        <file>sprites/mini_map_tank_1.png</file>
+        <file>sprites/mini_map_tank_2.png</file>
+        <file>sprites/preview_circle_of_power.png</file>
+        <file>sprites/tank_explotion.png</file>
+        <file>sprites/tank_level_up.png</file>
+        <file>ranks/rank_1.png</file>
+        <file>ranks/rank_2.png</file>
+        <file>ranks/rank_3.png</file>
+        <file>ranks/rank_4.png</file>
+        <file>ranks/rank_5.png</file>
+        <file>ranks/rank_6.png</file>
+        <file>ranks/rank_7.png</file>
+        <file>ranks/rank_8.png</file>
+        <file>ranks/rank_9.png</file>
+        <file>ranks/rank_10.png</file>
+        <file>ranks/rank_11.png</file>
+        <file>ranks/rank_12.png</file>
+        <file>ranks/rank_13.png</file>
+        <file>ranks/rank_14.png</file>
+        <file>ranks/rank_15.png</file>
+        <file>pointers/pointer_1.png</file>
+        <file>pointers/pointer_2.png</file>
+        <file>sprites/tank_direction.png</file>
+        <file>sprites/mini_map_tank_0.png</file>
+        <file>sounds/level_up.mp3</file>
+        <file>sprites/regeneration.png</file>
+    </qresource>
+</RCC>

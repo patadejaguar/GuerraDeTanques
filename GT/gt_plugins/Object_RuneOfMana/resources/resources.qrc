@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/xavier_object_rune_of_mana">
+        <file>rune_of_mana.png</file>
+        <file>mini_map_object.png</file>
+        <file>explode.png</file>
+        <file>rune.mp3</file>
+        <file>effect_animation.png</file>
+    </qresource>
+</RCC>

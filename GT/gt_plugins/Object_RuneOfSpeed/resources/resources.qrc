@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/xavier_object_rune_of_speed">
+        <file>explode.png</file>
+        <file>mini_map_object.png</file>
+        <file>rune.mp3</file>
+        <file>rune_of_speed.png</file>
+        <file>effect_animation.png</file>
+    </qresource>
+</RCC>

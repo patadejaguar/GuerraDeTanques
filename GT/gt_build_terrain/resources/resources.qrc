@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>obstruction.png</file>
+        <file>layer_object.png</file>
+        <file>layer_terrain.png</file>
+        <file>circle_of_power_green.png</file>
+        <file>circle_of_power_red.png</file>
+        <file>special.png</file>
+        <file>cursor.png</file>
+        <file>snap_to_grid.png</file>
+        <file>icons/icon.png</file>
+        <file>layer_regions.png</file>
+        <file>icons/mini_map_object.png</file>
+        <file>icons/mini_map_tank_1.png</file>
+        <file>icons/mini_map_tank_2.png</file>
+        <file>icons/preview_circle_of_power.png</file>
+        <file>sprite/circle_of_power_1.png</file>
+        <file>sprite/circle_of_power_2.png</file>
+        <file>sprite/live_cp_1.png</file>
+        <file>sprite/live_cp_2.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git init
+
+git commit -m "adding files"
+
+#git remote add origin https://github.com/patadejaguar/qmetro-android.git
+git remote add origin https://github.com/patadejaguar/GuerraDeTanques.git
+
+git push origin master
+

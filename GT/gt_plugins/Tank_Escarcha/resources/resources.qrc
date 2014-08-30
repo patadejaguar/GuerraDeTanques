@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/xavier_tank_escarcha">
+        <file>sprites/preview.png</file>
+        <file>sprites/body.png</file>
+        <file>sprites/turret.png</file>
+        <file>sprites/whell.png</file>
+        <file>sprites/preview_skill_1.png</file>
+        <file>sprites/preview_skill_2.png</file>
+        <file>sprites/preview_skill_3.png</file>
+        <file>sprites/skill_1.png</file>
+        <file>sprites/skill_2.png</file>
+        <file>sprites/skill_3.png</file>
+        <file>sprites/shot_fire_skill_1.png</file>
+        <file>sounds/shot.mp3</file>
+        <file>sounds/shot_explode.mp3</file>
+        <file>sprites/aura.png</file>
+        <file>sprites/effect_skill_3.png</file>
+        <file>sounds/frost.mp3</file>
+        <file>sounds/wave.mp3</file>
+        <file>sounds/snowfall.mp3</file>
+    </qresource>
+</RCC>
